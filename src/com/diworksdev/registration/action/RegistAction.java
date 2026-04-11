@@ -12,6 +12,8 @@ public class RegistAction extends ActionSupport implements SessionAware {
 	
 	public String execute() {
 
+		//再表示用sessionを後から記述
+		
 		return SUCCESS;
 	}
 
