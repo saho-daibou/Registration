@@ -98,7 +98,7 @@
 							<label>名前（姓）</label>
 						</td>
 						<td>
-							<input type="text" name="family_name" value="" maxlength="10" />
+							<input type="text" name="family_name" value="<s:property value='family_name'/>" maxlength="10" pattern="[\p{Hiragana}\p{Han}]{1,10}" required />
 						</td>
 					</tr>
 					<tr>
@@ -106,7 +106,7 @@
 							<label>名前（名）</label>
 						</td>
 						<td>
-							<input type="text" name="last_name" value="" maxlength="10" />
+							<input type="text" name="last_name" value="<s:property value='last_name'/>" maxlength="10" pattern="[\p{Hiragana}\p{Han}]{1,10}" required />
 						</td>
 					</tr>
 					<tr>
@@ -114,7 +114,7 @@
 							<label>カナ（姓）</label>
 						</td>
 						<td>
-							<input type="text" name="family_name_kana" value="" maxlength="10" />
+							<input type="text" name="family_name_kana" value="<s:property value='family_name_kana'/>" maxlength="10" pattern="[ァ-ヶー]{1,10}" required />
 						</td>
 					</tr>
 					<tr>
@@ -122,7 +122,7 @@
 							<label>カナ（名）</label>
 						</td>
 						<td>
-							<input type="text" name="last_name_kana" value="" maxlength="10" />
+							<input type="text" name="last_name_kana" value="<s:property value='last_name_kana'/>" maxlength="10" pattern="[ァ-ヶー]{1,10}" required />
 						</td>
 					</tr>
 					<tr>
@@ -130,7 +130,7 @@
 							<label>メールアドレス</label>
 						</td>
 						<td>
-							<input type="text" name="mail" value="" maxlength="100" />
+							<input type="email" name="mail" value="<s:property value='mail'/>" pattern="[a-zA-Z0-9@.\-]{1,100}" maxlength="100" required />
 						</td>
 					</tr>
 					<tr>
@@ -138,7 +138,7 @@
 							<label>パスワード</label>
 						</td>
 						<td>
-							<input type="text" name="password" value="" maxlength="10" />
+							<input type="text" name="password" value="" pattern="[a-zA-Z0-9]{1,10}" maxlength="10" required />
 						</td>
 					</tr>
 					<tr>
@@ -155,7 +155,7 @@
 							<label>郵便番号</label>
 						</td>
 						<td>
-							<input type="text" name="postal_code" value="" maxlength="7" />
+							<input type="text" name="postal_code" value="<s:property value='postal_code'/>" pattern="[0-9]{7}" maxlength="7" required />
 						</td>
 					</tr>
 					<tr>
@@ -163,7 +163,7 @@
 							<label>住所（都道府県）</label>
 						</td>
 						<td>
-							<select name="prefecture">
+							<select name="prefecture" required>
 							    <option value="" selected></option>
 							    <option value="北海道">北海道</option>
 							    <option value="青森県">青森県</option>
@@ -220,7 +220,7 @@
 							<label>住所（市区町村）</label>
 						</td>
 						<td>
-							<input type="text" name="address_1" value="" maxlength="10" />
+							<input type="text" name="address_1" value="<s:property value='address_1'/>" pattern="[ぁ-んァ-ヶー一-龥0-9\- ]{1,10}" maxlength="10" required />
 						</td>
 					</tr>
 					<tr>
@@ -228,7 +228,7 @@
 							<label>住所（番地）</label>
 						</td>
 						<td>
-							<input type="text" name="address_2" value="" maxlength="100" />
+							<input type="text" name="address_2" value="<s:property value='address_2'/>" pattern="[ぁ-んァ-ヶー一-龥0-9\- ]{1,100}" maxlength="100" required />
 						</td>
 					</tr>
 					<tr>
@@ -244,7 +244,7 @@
 					</tr>
 				</table>
 			<s:submit value="確認する" />
-			<s:form>
+			</s:form>
         </div>
                 
         
