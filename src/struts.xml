@@ -18,6 +18,10 @@
 	</action>
 	
 	<!-- RegistConfirmAction -->
+	<action name="RegistConfirmAction" class="com.diworksdev.registration.action.RegistConfirmAction">
+	    <result name="success">regist_confirm.jsp</result>
+	    <result name="error">regist.jsp</result>
+	</action>
 	
 	<!-- RegistCompleteAction -->
 	
