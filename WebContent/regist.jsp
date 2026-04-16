@@ -103,7 +103,7 @@
 						<td>
 							<input type="text" name="family_name" 
 								value="<s:property value='family_name'/>" 
-								maxlength="10" pattern="[\p{Hiragana}\p{Han}]{1,10}" required />
+								maxlength="10" pattern="[\p{Hiragana}\p{Han}]{1,10}" />
 						</td>
 					</tr>
 					<s:if test="fieldErrors.family_name != null">
@@ -121,7 +121,7 @@
 						<td>
 							<input type="text" name="last_name" 
 								value="<s:property value='last_name'/>" 
-								maxlength="10" pattern="[\p{Hiragana}\p{Han}]{1,10}" required />
+								maxlength="10" pattern="[\p{Hiragana}\p{Han}]{1,10}" />
 						</td>
 					</tr>
 					<s:if test="fieldErrors.last_name != null">
@@ -139,7 +139,7 @@
 						<td>
 							<input type="text" name="family_name_kana" 
 								value="<s:property value='family_name_kana'/>" 
-								maxlength="10" pattern="[ァ-ヶー]{1,10}" required />
+								maxlength="10" pattern="[ァ-ヶー]{1,10}" />
 						</td>
 					</tr>
 					<s:if test="fieldErrors.family_name_kana != null">
@@ -157,7 +157,7 @@
 						<td>
 							<input type="text" name="last_name_kana" 
 								value="<s:property value='last_name_kana'/>" 
-								maxlength="10" pattern="[ァ-ヶー]{1,10}" required />
+								maxlength="10" pattern="[ァ-ヶー]{1,10}" />
 						</td>
 					</tr>
 					<s:if test="fieldErrors.last_name_kana != null">
@@ -175,7 +175,7 @@
 						<td>
 							<input type="email" name="mail" 
 								value="<s:property value='mail'/>" 
-								pattern="[a-zA-Z0-9@.\-]{1,100}" maxlength="100" required />
+								pattern="[a-zA-Z0-9@.\-]{1,100}" maxlength="100" />
 						</td>
 					</tr>
 					<s:if test="fieldErrors.mail != null">
@@ -193,7 +193,7 @@
 						<td>
 							<input type="text" name="password" 
 								value="<s:property value='password'/>" 
-								pattern="[a-zA-Z0-9]{1,10}" maxlength="10" required />
+								pattern="[a-zA-Z0-9]{1,10}" maxlength="10" />
 						</td>
 					</tr>
 					<s:if test="fieldErrors.password != null">
@@ -230,7 +230,7 @@
 						<td>
 							<input type="text" name="postal_code" 
 								value="<s:property value='postal_code'/>" 
-								pattern="[0-9]{7}" maxlength="7" required />
+								pattern="[0-9]{7}" maxlength="7" />
 						</td>
 					</tr>
 					<s:if test="fieldErrors.postal_code != null">
@@ -270,7 +270,7 @@
 						<td>
 							<input type="text" name="address_1" 
 								value="<s:property value='address_1'/>" 
-								pattern="[ぁ-んァ-ヶー一-龥0-9\- ]{1,10}" maxlength="10" required />
+								pattern="[ぁ-んァ-ヶー一-龥0-9\- ]{1,10}" maxlength="10" />
 						</td>
 					</tr>
 					<s:if test="fieldErrors.address_1 != null">
@@ -288,7 +288,7 @@
 						<td>
 							<input type="text" name="address_2" 
 								value="<s:property value='address_2'/>" 
-								pattern="[ぁ-んァ-ヶー一-龥0-9\- ]{1,100}" maxlength="100" required />
+								pattern="[ぁ-んァ-ヶー一-龥0-9\- ]{1,100}" maxlength="100" />
 						</td>
 					</tr>
 					<s:if test="fieldErrors.address_2 != null">
