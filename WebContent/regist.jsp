@@ -210,7 +210,7 @@
 						</td>
 						<td>
 							<input type="radio" name="gender" value="0"
-								<s:if test="gender == '0'">checked</s:if>> 男
+								<s:if test="gender == '0' || gender == null">checked</s:if>> 男
 							<input type="radio" name="gender" value="1"
 								<s:if test="gender == '1'">checked</s:if>> 女
 						</td>
