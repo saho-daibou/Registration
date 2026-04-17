@@ -4,6 +4,7 @@ import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
 
+import com.diworksdev.registration.util.PrefectureUtil;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class RegistConfirmAction extends ActionSupport implements SessionAware {
@@ -22,8 +23,11 @@ public class RegistConfirmAction extends ActionSupport implements SessionAware {
 	private String authority;
 	
 	private Map<String, Object> session;
+	private Map<String, String> prefectureMap;
 	
 	public String execute() {
+		
+		prefectureMap = PrefectureUtil.getPrefectureMap();
 		
 		//入力チェック・エラー表示
 		if (family_name.equals("")) {
@@ -172,5 +176,9 @@ public class RegistConfirmAction extends ActionSupport implements SessionAware {
 	}
 	public void setAuthority(String authority) {
 		this.authority = authority;
+	}
+	
+	public Map<String, String> getPrefectureMap() {
+	    return prefectureMap;
 	}
 }
