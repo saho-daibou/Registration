@@ -89,11 +89,7 @@
         	<div id="top">
         		<p>アカウント登録画面</p>
         	</div>
-        	
-        	<s:if test="errorMessage !=''">
-				<s:property value="errorMessage" escape="false" />
-			</s:if>
-			
+        				
 			<s:form action="RegistConfirmAction">
 				<table>
 					<tr>
